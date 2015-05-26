@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/swatkns785/name-game.svg?branch=master)](https://travis-ci.org/swatkns785/name-game) [![Code Climate](https://codeclimate.com/github/swatkns785/name-game.png)](https://codeclimate.com/github/swatkns785/name-game) [![Coverage Status](https://coveralls.io/repos/swatkns785/name-game/badge.png)](https://coveralls.io/r/swatkns785/name-game)
