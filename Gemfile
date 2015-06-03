@@ -9,13 +9,18 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'imdb', '~> 0.8'
+gem 'json'
+gem 'wikipedia-client'
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'pry-rails'
   gem 'web-console', '~> 2.0'
-  gem 'spring'
+  gem 'puma'
+  gem 'valid_attribute'
+  gem 'shoulda-matchers'
 end
 
 group :test do

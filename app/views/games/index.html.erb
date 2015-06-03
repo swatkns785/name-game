@@ -1,0 +1,27 @@
+<h1>Search</h1>
+
+<div class="images-container"></div>
+
+<div class="search-function" style="display: inline">
+  <%= form_tag "/games", method: :get, remote: true do %>
+    <%= text_field_tag :query %>
+    <p><%= submit_tag "Search", id: "search-button", style: "display: inline" %><p>
+  <% end %>
+</div>
+<button action="/games" method="get" data-remote="true" id="new-game" style="display: none; width: 100px; height: 20px; background-color: gray; color: black;">New Game</button>
+
+<div class="results"></div>
+<script>
+$(document).ready(function(){
+  $("#search-button").on("click", function(){
+    $(".search-function").hide();
+    $("#new-game").show();
+  });
+  $("#new-game").on("click", function(){
+    $(".images-container").empty();
+    $(".results").empty();
+    $(".search-function").show();
+    $("#new-game").hide();
+  });
+});
+</script>
