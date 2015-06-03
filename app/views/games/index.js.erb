@@ -1,0 +1,12 @@
+$(".images-container").append("<% session[:actor_images].shuffle.each do |image| %>");
+$(".images-container").append("<p><img src='<%= image %>' width='300px' /></p>");
+$(".images_container").append("<% end %>");
+$(".results").append("<h3><%= session[:movie_title] %></h3>");
+$(".results").append("<ul>");
+$(".results").append("<% session[:cast_members].each do |cast_member| %>");
+$(".results").append("<li><%= cast_member %></li>");
+$(".results").append("<% end %>");
+$(".results").append("</ul>");
+$("#search-button").click(function(){
+  $(".search-function").hide();
+});
